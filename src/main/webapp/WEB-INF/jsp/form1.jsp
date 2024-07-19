@@ -13,16 +13,17 @@
 		(ArrayList<String[]>) request.getAttribute("result");
 %>
 <body>
-<form method="get" action"./index4">
-<select NAME="ITEM_NO">
+<form method="get" action="./result1">
+<select name="ID">
+
 
 	<% for (String[] ss : result) { %>
-		<option VALUE="<%= ss[1]  %>">
+		<option value="<%= ss[1]  %>">
 		<%=ss[0]%>			
 		</option>
 	<% } %>
 </select>
-<input type="submit" value="送信">
+<input type="submit" value="絞り込む"/>
 </form>
 </body>
 </html>
